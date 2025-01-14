@@ -58,6 +58,10 @@
         <hamcrest.version>2.2</hamcrest.version>
         <junit-jupiter.version>5.8.1</junit-jupiter.version>
 
+         <!-- Sonarscanner -->
+         <sonar.organization>rjgcp</sonar.organization>
+         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
         <!-- JDBC Drivers -->
         <mysql-driver.version>8.0.19</mysql-driver.version>
         <postgresql-driver.version>9.4.1211.jre7</postgresql-driver.version>
@@ -469,10 +473,6 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-            <properties>
-                <sonar.organization>rjgcp</sonar.organization>
-                <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-            </properties>
             <properties>
                 <db.script>h2</db.script>
                 <jpa.database>H2</jpa.database>
